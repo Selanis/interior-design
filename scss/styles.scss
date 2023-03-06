@@ -18,9 +18,11 @@ nav {
     top: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 100;
 
     .nav-main {
+        padding-left: 30px;
         width: 100%;
         height: 100%;
         max-width: 1112px;
@@ -44,6 +46,10 @@ nav {
             width: 100%;
             max-width: 70px;
         }
+    }
+
+    .burger-menu {
+        opacity: 0;
     }
 }
 
@@ -112,65 +118,7 @@ body {
             margin-left: 135px;
             z-index: 3;
         }
-    }
-
-    .collection {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: 100%;
-        max-width: 1110px;
-        margin-top: 93px;
-        margin-bottom: 100px;
-
-        div {
-            background-color: #E5E6E6;
-            width: 100%;
-            height: 100%;
-            max-width: 350px;
-            min-height: 450px;
-            display: flex;
-            flex-direction: column;
-            
-
-            h1 {
-                font-weight: 400;
-                font-size: 30px;
-                padding-left: 30px;
-                padding-top: 50px;
-            }
-
-            button {
-                width: 124px;
-                height: 48px;
-                border: none;
-                margin-top: 10px;
-                background: url('../photo/white-button.png');
-                margin-left: 30px;
-            }
-
-        }
-
-        &__item1 {
-            img {
-                padding-left: 127px;
-                margin-top: 17px;
-            }
-        }
-
-        &__item2 {
-            h1 {
-                margin-bottom: 40px;
-            }
-        }
-
-        &__item3 {
-            img {
-                margin-top: 29px;
-                padding-left: 68px;
-            }
-            
-        }
+    
         
     }
 
@@ -179,12 +127,16 @@ body {
         height: 100%;
         max-width: 1110px;
         min-height: 862px;
+        margin-top: 100px;
+
 
         .text-arrivals {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
+
+
 
             &__item1 {
                 width: 100%;
@@ -239,6 +191,7 @@ body {
             }
 
         }
+    }
 
         //Цены
         .arrivals {
@@ -246,6 +199,8 @@ body {
             justify-content: space-between;
             flex-wrap: wrap;
             flex-direction: row;
+            padding-left: 10px;
+            padding-right: 10px;
 
             .item {
                 width: 255px;
@@ -359,7 +314,7 @@ body {
             display: flex;
             justify-content: space-between;
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: wrap;         
 
             .words-item {
                 width: 255px;
@@ -369,6 +324,8 @@ body {
                 display: flex;
                 align-items: center;
                 flex-direction: column;
+                
+                
 
                 &__ava {
                     margin-top: -47px;
@@ -419,6 +376,298 @@ body {
 
         
     }
+
+
+
+@media (max-width: 1026px) {
+    .words-item {
+        margin-top: 50px;
+    }
+    
+    
 }
 
+@media (max-width: 769px) {
+    * {
+        font-size: 14px;
+    }
 
+    body {
+        .main-desktop {
+            .desktop {
+                padding-left: 108px;  
+    
+                h1 {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+    
+                h2 {
+                    color: #121211;
+                    font-weight: 400;
+                    font-size: 24px;
+                }
+
+            }
+        
+            .lines-img {
+                margin-top: -100px;
+                margin-left: 60px;
+            }
+        }
+
+        .best-new-arrivals {
+            
+            .text-arrivals { 
+                &__item2 {
+                    h1 {
+                        font-size: 32px;
+                    }
+                }
+            }
+        }
+        .words-of-clients {  
+            .what-say {  
+                margin-top: 20px;
+                hr {
+                    background-color: #E0E0E0;
+                    height: 1px;
+                    width: 55px;
+                }
+
+            }
+    
+            h2 {
+                font-size: 36px;
+                margin-top: 16px;
+                margin-bottom: 0px;
+            }
+
+        }
+    
+            
+    }
+    
+    
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 14px;
+    }
+
+    nav {
+    
+        .nav-main {
+            .nav-ul {
+                max-width: 380px;
+            }
+    
+            .nav-logo {
+                max-width: 60px;
+            }
+        }
+    }
+
+    body {
+        .main-desktop {
+            .desktop {
+                padding-left: 68px;  
+    
+                .desktop-h1 {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+    
+                h2 {
+                    color: #121211;
+                    font-weight: 400;
+                    font-size: 20px;
+                }
+
+                button {
+                    margin-top: 15px;
+                }
+
+            }
+        
+            .lines-img {
+                margin-top: -100px;
+                margin-left: 20px;
+            }
+        }
+
+        .best-new-arrivals {
+            
+            .text-arrivals { 
+                &__item2 {
+                    width: 100%;
+                    margin-top: 21px;
+                    
+    
+                    .arrivals-h1 {
+                        font-size: 30px;
+                    }
+    
+                    ul {
+                        max-width: 250px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .words-of-clients {  
+            .what-say {  
+                margin-top: 20px;
+            }
+    
+            h2 {
+                font-size: 36px;
+                margin-top: 16px;
+                margin-bottom: 0px;
+            }
+        }    
+    }
+}
+
+@media (max-width: 529px) {
+    body {
+        .best-new-arrivals {  
+            .text-arrivals { 
+                &__item2 {
+                    .arrivals-h1 {
+                        font-size: 27px;
+                        padding-left: 15px;
+                    }
+
+                    ul {
+                        max-width: 250px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .arrivals {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 512px) {
+    * {
+        font-size: 12px;
+    }
+
+    nav {
+        .nav-main {       
+            .nav-ul {
+                max-width: 300px;
+            }
+    
+            .nav-logo {
+                max-width: 50px;
+            }
+        }
+    }
+
+    body {
+        .words-of-clients {
+            .words {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;    
+                align-items: center;    
+            }
+        }
+
+        .best-new-arrivals {
+            .text-arrivals {
+                &__item2 {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 13px;
+
+                    ul {
+                        padding-left: 15px;
+                        padding-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    nav {   
+        .nav-main {
+            
+
+            .nav-ul {
+                opacity: 0;
+                width: 0px;
+            }
+    
+            .nav-logo {
+                opacity: 0%;
+                width: 0px;
+            }
+        }
+    
+        .burger-menu {
+            padding-right: 30px;
+            opacity: 100%;
+        }
+    }
+
+    body {
+        .main-desktop {
+            .desktop {
+                padding-left: 23px;  
+    
+                .desktop-h1 {
+                    font-size: 27px;
+                    line-height: 30px;
+                }
+    
+                h2 {
+                    font-size: 14px;
+                    margin-top: 5px;
+                }
+    
+                button {
+                    margin-top: 11px;
+                }
+            }
+        
+            .lines-img {
+                margin-top: -12px;
+                margin-left: -18px;
+            }
+        }
+    }
+
+    .words-of-clients {
+        .words-h2 {
+            font-size: 30px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        .words-of-clients {
+            .words-h2 {
+                font-size: 28px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
