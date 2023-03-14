@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&family=Nunito:wght@300&display=swap');
+$black_color: #1B1A1A;
+
 
 * {
     font-family: "Nunito Sans", sans-serif;
@@ -6,7 +8,7 @@
     font-weight: 300;
     margin: 0px;
     padding: 0px;
-    color: #1B1A1A;
+    color: $black_color;
 }
 
 nav {
